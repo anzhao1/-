@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tou.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cheng.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- tou -->
+		<div class="top_box1">
+			<div class="top_box2">
+				<ul class="top_ul1">
+					<li class="top-li1"><a href="#">Hi,ROOT001</a></li>
+					<li class="top-li2">目前积分：<span>7864</span></li>
+					<li class="top-li3"><a href="#">退出</a></li>
+					<li class="top-li4"><a href="#">修改密码</a></li>
+					<li class="top-li5"><a href="#">返回活动选择页</a></li>
+				</ul>
+			</div>
+			<div class="top_box3">
+				<div class="top_box4">
+					<img src="img/serveDh.png"/>
+				</div>
+				<div class="top_box5">
+					<div class="top_box5_1">
+						<input class="top_input1" type="text" value="输入关键字" />
+						<input class="top_input2" type="submit" name="" id="" value="" />
+					</div>
+					<ul class="top_ul2">
+						<li>热搜关键词：</li>
+						<li><a href="#">金吉星</a></li>
+						<li><a href="#">机油</a></li>
+						<li><a href="#">工作手套</a></li>
+						<li><a href="#">POLO衫</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top_box6">
+				<div class="top_box6_1">
+					<div class="top_box6_2">
+						<p class="top_p1">
+							<img src="img/frequeL1.png"/>
+							<a href="#">城频道分类</a>
+						</p>
+						<div class="ying_div">
+							<ul class="ying_ul">
+								<li>
+									<a href="#"><img src="img/frequeL2.png"/>家居生活<span>></span></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/frequeL3.png"/>汽车养修<span>></span></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/frequeL4.png"/>我要服务<span>></span></a>
+								</li>
+							</ul>
+							<div class="ying_div2">
+								<img src="img/doubleR.png"/>
+								<a href="#">分公司查询登陆</a>
+							</div>
+						</div>
+					</div>
+					<div class="top_box6_3">
+						<ul class="top_ul3">
+							<li>
+								<a href="#"><img src="img/indMenuBg.png"/>首页</a>
+							</li>
+							<li><a href="#">活动机制</a></li>
+							<li><a href="#">下单流程</a></li>
+							<li><a href="#">质保机制</a></li>
+							<li><a href="#">服务中心</a></li>
+							<li><a href="#">订单中心</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<!-- -->
+		<div class="body_box1">
+			<ul class="body_ul1">
+				<li class="cut"><img src="img/ZlhdpLi_noe.jpg"/></li>
+				<li><img src="img/ZlhdpLi_tow.jpg"/></li>
+			</ul>
+		</div>
+		<div class="body_box2">
+			<div class="body_box2_1">
+				<div class="body_box2_2">
+					<div class="body_box2_3">
+						<h2 class="body_h2">
+							<span>1F</span>
+							精品推荐
+						</h2>
+						<a class="body_a1" href="#">更多产品</a>
+					</div>
+					<div class="body_box2_4">
+						<div class="body_box2_5">
+							<div class="body_box2_6">
+								<p class="body_p1"><a href="#">美的（Midea） 微波炉美的（Midea） 微波炉美的（Midea） 微波炉美的（Midea） 微波炉美的</a></p>
+								<div class="body_box2_6_1">
+									<span class="body_span1">2500积分</span>
+									<a href="#" class="body_a2"><img src="img/products1.png"/></a>
+								</div>
+							</div>
+							<div class="body_box2_7">
+								<a href="#" class="body_a3"><img src="img/products2.png"/></a>
+								<p class="body_p2"><a href="#">苹果（APPLE）iPad Air 2</a></p>
+								<span class="body_span2">2500积分</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$(".body_ul1 li").click(function(){
+    	$(".part3ScrollCon").stop().animate({left:"-480px"},500,function(){
+    		$(this).css('left','0px');
+    		$(".part3ScrollCon ul").append($(".part3ScrollCon ul li:first"));
+    		// //打标签
+    		$(".part3Scroll span font").text(($(".part3ScrollCon ul li:first").attr("mark")));
+    	});
+    });
+	})
+</script>

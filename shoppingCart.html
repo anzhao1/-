@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tou.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wei.css"/>
+		<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cheng.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top_box1">
+			<div class="top_box2">
+				<ul class="top_ul1">
+					<li class="top-li1"><a href="#">Hi,ROOT001</a></li>
+					<li class="top-li2">目前积分：<span>7864</span></li>
+					<li class="top-li3"><a href="#">退出</a></li>
+					<li class="top-li4"><a href="#">修改密码</a></li>
+					<li class="top-li5"><a href="#">返回活动选择页</a></li>
+				</ul>
+			</div>
+			<div class="top_box3">
+				<div class="top_box4">
+					<img src="img/serveDh.png"/>
+				</div>
+				<div class="top_box5">
+					<div class="top_box5_1">
+						<input class="top_input1" type="text" value="输入关键字" />
+						<input class="top_input2" type="submit" name="" id="" value="" />
+					</div>
+					<ul class="top_ul2">
+						<li>热搜关键词：</li>
+						<li><a href="#">金吉星</a></li>
+						<li><a href="#">机油</a></li>
+						<li><a href="#">工作手套</a></li>
+						<li><a href="#">POLO衫</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top_box6">
+				<div class="top_box6_1">
+					<div class="top_box6_2">
+						<p class="top_p1">
+							<img src="img/frequeL1.png"/>
+							<a href="#">城频道分类</a>
+						</p>
+						<div class="ying_div">
+							<ul class="ying_ul">
+								<li class="cut">
+									<a href="#"><img src="img/frequeL2.png"/>家居生活<span>></span></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/frequeL3.png"/>汽车养修<span>></span></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/frequeL4.png"/>我要服务<span>></span></a>
+								</li>
+							</ul>
+							<div class="ying_div2">
+								<img src="img/doubleR.png"/>
+								<a href="#">分公司查询登陆</a>
+							</div>
+						</div>
+					</div>
+					<div class="top_box6_3">
+						<ul class="top_ul3">
+							<li>
+								<a href="#"><img src="img/indMenuBg.png"/>首页</a>
+							</li>
+							<li><a href="#">活动机制</a></li>
+							<li><a href="#">下单流程</a></li>
+							<li><a href="#">质保机制</a></li>
+							<li><a href="#">服务中心</a></li>
+							<li><a href="#">订单中心</a></li>
+						</ul>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="bt">
+			<p>您当前的位置：&nbsp;&nbsp;首页&nbsp;>&nbsp;购物车</p>
+		</div>
+		<div class="b_content">
+			<div class="bt_content"></div>
+			<div class="content_s">
+				<span>产品列表</span>
+			</div>
+			<div class="content_s01">
+				<input type="checkbox" name="" id="" value="" />
+				<span>全选</span>
+				<span class="k_rig"></span>
+			</div>
+			<div class="xq_content">
+				<table class="xq_con">
+					<tbody>
+						<tr class="first_tr">
+							<th class="th01">商品名称</th>
+							<th class="th02">积分</th>
+							<th class="th03">数量</th>
+							<th class="th04">小计</th>
+							<th class="th05">规则备注</th>
+							<th class="th06">操作</th>
+						</tr>
+						<tr class="two_tr">
+							<th class="th01_t">
+								<input type="checkbox" name="" id="" value="" />
+								<span>泊尔双胆正品</span>
+							</th>
+							<th class="th02_t">52.00</th>
+							<th class="th03_t">
+								<div class="div01" onclick="sub()">-</div>
+								<input class="div02" id="txt" value="1"/>
+								<div class="div03" onclick="add()">+</div>
+							</th>
+							<th class="th04_t"><input id="xj" value="52.00"/>积分</th>
+							<th class="th05_t">5L白色</th>
+							<th class="th06_t">删除</th>
+						</tr>
+						<tr class="two_tr">
+							<th class="th01_t02">
+								<input type="checkbox" name="" id="" value="" />
+								<span>便携式音箱SBM100 三种色系丰富视觉选择 wOOx扬声器携式音箱SBM100 </span>
+							</th>
+							<th class="th02_t">52.00</th>
+							<th class="th03_t">
+								<div class="div01" onclick="sub01()">-</div>
+								<input class="div02" id="txt01"  value="1"/>
+								<div class="div03" onclick="add01()">+</div>
+							</th>
+							<th class="th04_t" ><input  id="xj01" value="52.00" />积分</th>
+							<th class="th05_t">5L白色</th>
+							<th class="th06_t">删除</th>
+						</tr>
+						<tr class="two_tr">
+							<th class="th01_t03">
+								<input type="checkbox" name="" id="" value="" />
+								<span>便携式音箱SBM100 三种色系丰富视觉选择 wOOx扬声器携式音箱SBM100 </span>
+							</th>
+							<th class="th02_t">52.00</th>
+							<th class="th03_t">
+								<div class="div01" onclick="sub02()">-</div>
+								<input class="div02" id="txt02" value="1"/>
+								<div class="div03" onclick="add02()">+</div>
+							</th>
+							<th class="th04_t"><input  id="xj02" value="52.00"/>积分</th>
+							<th class="th05_t">5L白色</th>
+							<th class="th06_t">删除</th>
+						</tr>
+					</tbody>
+				</table>
+				<div class="last_div"> 
+					<input type="checkbox" name="" id="" value="" />
+					<span class="last_sa">全选</span>
+					<a href="javascript:0;" class="last_sa">删除</a>
+					<p>账户余额：<span>278.00积分</span></p>
+					<p>已选商品总额：<span>0.00积分</span></p>
+					<p>件</p>
+					<p>已选商品<span>0</span></p>
+				</div>
+				<div class="kj_t">
+					<a href="javascript:0;"></a>
+					<img src="img/immedOrder_02.png" class="img02"/>
+				</div>
+			</div>
+		</div>
+		<div class="wei_box1">
+			<div class="wei_box2">
+				<img src="img/foorterImg.jpg"/>
+			</div>
+			<div class="wei_box3">
+				<ul>
+					<li><a href="#">订单帮助</a></li>
+					<li><a href="#">礼品售后</a></li>
+					<li><a href="#">投诉说明</a></li>
+					<li><a href="#">法律声明</a></li>
+					<li><a href="#">友情链接</a></li>
+				</ul>
+				<p>版权所有&nbsp;&nbsp;沪ICP备12038387号</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//鼠标经过商城频道
+	$(function(){
+		$(".top_three").mouseover(function(){
+			$(".ul_d01").css("display","block")
+		})		
+		$(".top_three").mouseout(function(){
+			$(".ul_d01").css("display","none")
+		})	
+		
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+	//返回顶部JQ  淡入淡出  返回顶部
+		$(window).scroll(function(event){
+			var h =$(window).scrollTop();
+			//console.log(h);
+			if(h>500){
+				$("#gd_f").fadeIn(100);
+			}else{
+				$("#gd_f").fadeOut(100);
+			}
+		});
+		$("#gd_f").click(function(){
+			$('body,html').animate({
+				scrollTop:0
+			},1000);
+		})
+		
+	});
+</script>
+<script type="text/javascript">
+	//鼠标进入离开搜索框
+	$(function(){
+		$("#myinp").mouseover(function(){
+			$(this).removeAttr("value");
+		})	
+		$("#myinp").mouseout(function(){
+			$(this).attr("value","请输入关键字");
+		})	
+	})
+</script>
+<script type="text/javascript">
+	//点击清空购物车
+	$(function(){
+		$(".k_rig").click(function(){
+			$(".xq_con").css("display","none");
+		})
+	})
+	//删除单件商品
+	$(function(){
+		$(".th06_t").click(function(){
+			$(this).parent().css("display","none");
+		})
+	})
+</script>
+<script type="text/javascript">
+	function add(){
+        var txt=document.getElementById("txt");
+        var xf=document.getElementById("xj");
+        var a=txt.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        //alert(typeof(a1))
+        a++;
+        a1+=52.00;
+        txt.value=a;
+        xf.value=Number(a1);
+    }
+	function sub(){
+        var txt=document.getElementById("txt");
+        var xf=document.getElementById("xj");
+        var a=txt.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        if(a>1&&a1>1){
+            a--;
+            a1-=52.00;
+            txt.value=a;
+            xf.value=a1;
+        }else{
+            txt.value=1;
+            xf.value=52.00;
+        } 
+    }
+	function add01(){
+        var txt1=document.getElementById("txt01");
+        var xf=document.getElementById("xj01");
+        var b=txt1.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        //alert(typeof(a1))
+        a1+=52.00;
+        xf.value=Number(a1);
+        ++b;
+        txt1.value=b;
+    }
+	function sub01(){
+        var txt1=document.getElementById("txt01");
+        var xf=document.getElementById("xj01");
+        var b=txt1.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        if(b>1&&a1>1){
+            b--;
+            txt1.value=b;
+             a1-=52.00;
+            xf.value=a1;
+        }else{
+            txt1.value=1;
+            xf.value=52.00;
+        } 
+    }
+	function add02(){
+        
+        var txt2=document.getElementById("txt02");
+        var xf=document.getElementById("xj02");
+        var c=txt2.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        ++c;
+        txt2.value=c;
+        a1+=52.00;
+        xf.value=Number(a1);
+  }
+	function sub02(){
+        var txt2=document.getElementById("txt02");
+        var xf=document.getElementById("xj02");
+        var c=txt2.value;
+        var a1=xf.value;
+        var a1=Number(a1);
+        if(c>1&&a1>1){
+            c--;
+            txt2.value=c;
+            a1-=52.00;
+            xf.value=a1;
+        }else{
+            txt2.value=1;
+            xf.value=52.00;
+        } 
+    }
+</script>

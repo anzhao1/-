@@ -1,0 +1,177 @@
+.top_box1{
+	width: 100%;
+	
+}
+
+/*dao*/
+.top_box2{
+	width: 100%;
+	height: 36px;
+	margin: 0 auto;
+	border-bottom: 1px solid #DFDFDF;
+}
+.top_box2 .top_ul1{
+	width: 1200px;
+	padding-top:10px ;
+	margin: 0 auto;
+}
+.top_box2 .top_ul1 li{
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right:1px solid black ;
+}
+.top_box2 .top_ul1 li a{
+	text-decoration: none;
+}
+.top-li1 a{
+	color: #0066CC;
+	font-size: 12px;
+}
+.top-li2{
+	font-size: 12px;
+}
+.top-li2 span{
+	color: #0066CC;
+}
+.top-li5 a{
+	color: #0066CC;
+	font-size: 12px;
+}
+
+
+
+
+
+.top_box3{
+	width: 1200px;
+	height: 72px;
+	margin: 0 auto;
+	padding-top:26px ;
+}
+.top_box4{
+	float: left;
+}
+.top_box5{
+	float: right;
+	padding-top: 14px;
+}
+.top_box5_1{
+	height: 32px;
+	background-size:100% ;
+	background: url(../img/searchDiv_form.png) no-repeat;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+.top_input1{
+	width: 202px;
+	height: 26px;
+	border: none;
+	float: left;
+}
+.top_input2{
+	width: 53px;
+	height: 28px;
+	background: Transparent;
+	border: none;
+}
+.top_ul2{
+	margin: 7px;
+}
+.top_ul2 li{
+	float: left;
+	padding-right: 14px;	
+}
+.top_ul2 li a{
+	text-decoration: none;
+	color: #666;
+	font-size: 12px;
+}
+.top_box6{
+	width: 100%;
+	height: 40px;
+	background: #005BAC;
+	margin-top: 20px;
+}
+.top_box6_1{
+	width: 1200px;
+	margin: 0 auto;
+}
+.top_box6_2{
+	height: 40px;
+	width: 236px;
+	float: left;
+}
+.top_p1{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	
+}
+.top_p1 img{
+	margin-top:-8px ;
+}
+.top_p1 a{
+	text-decoration: none;
+	color: white !important;
+}
+.top_box6_3{
+	
+}
+.top_ul3 li{
+	float: left;
+	padding: 0 32px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../img/headerMenu_ulli.png) no-repeat;
+}
+.top_ul3 li a{
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+}
+.top_ul3 li a img{
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+.ying_div{
+	width: 236px;
+    height: 360px;
+    background: #005BAC;
+    z-index: 10;
+    display: none;
+    position: absolute;
+}
+.ying_ul{
+	text-align: center;
+}
+.ying_ul li{
+	padding-top: 20px;
+}
+.ying_ul li img{
+	padding-right: 10px;
+}
+.ying_ul li a{
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	
+}
+.ying_div2{
+	width: 253px;
+    height: 53px;
+    line-height: 53px;
+    background-color: #0773D3;
+    z-index: 11;
+    margin-left:-9px ;
+    margin-top: 140px;
+}
+.ying_div2 img{
+	padding-left: 65px;
+}
+.ying_div2 a{
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+}
