@@ -13,6 +13,8 @@
 		<script src="js/cheng.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/sousu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/djiaj.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fadeIn.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!-- tou -->
@@ -142,9 +144,9 @@
 						</div>
 						<div class="body_box2_3">
 							<span>购买数量：</span>
-							<input class="body_input1" type="button" name="" id="" value="" />
-							<input class="body_input2" type="text" name="" id="" value="1" />
-							<input class="body_input3" type="button" name="" id="" value="" />
+							<input class="body_input1" type="button" onclick="sub() "/>
+							<input class="body_input2" type="text" name="" id="txt" value="1" />
+							<input class="body_input3" type="button" onclick="add()" />
 						</div>
 						<span class="body_span1">
 							库存18520件
@@ -235,6 +237,17 @@
 			</ul>
 			<p>版权所有:&nbsp;&nbsp;沪ICP备12038387号</p>
 		</div>
+		<div id="gd_f"></div>
 	</body>
 </html>
-
+<script type="text/javascript">
+	$("#tab li").mouseover(function(){
+		$(this).css("border","2px solid red").siblings().css("border","solid 2px #C1B9B9");
+		$(this).css("background","url(img/tb-selected-b.gif)no-repeat bottom right").siblings().css("background","#fff");
+	})
+	
+	$(".body_ul2 li").mouseover(function(){
+		$(this).css("border","2px solid red").siblings().css("border","solid 2px #C1B9B9");
+		$(this).css("background","url(img/tb-selected-b.gif)no-repeat bottom right").siblings().css("background","#fff");
+	})
+</script>

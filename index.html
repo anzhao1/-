@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>index</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tou.css"/>
 		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
@@ -10,6 +10,7 @@
 		<script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/cheng.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/sousu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fadeIn.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!-- tou -->
@@ -84,11 +85,24 @@
 
 		<!-- -->
 		<div class="body_box1">
-			<ul class="body_ul1">
-				<li class="cut"><img src="img/ZlhdpLi_noe.jpg"/></li>
+			<ul class="body_ul1" id="aa">
+				<li><img src="img/ZlhdpLi_noe.jpg"/></li>
 				<li><img src="img/ZlhdpLi_tow.jpg"/></li>
 			</ul>
 		</div>
+		<script type="text/javascript">
+			var $bannerUl=$('.body_box1 ul'),$bannerLi=$('.body_box1 ul li');
+		    //动态获取ul的宽度
+		    $bannerUl.css('width',$bannerLi.width()*$bannerLi.length);
+		    setInterval(function(){
+		        $bannerUl.animate({
+		            'marginLeft':-$bannerLi.width()
+		        },500,function(){
+		            $(this).animate({'marginLeft':0},0)
+		                .find('li').eq(0).appendTo($(this));
+		        });
+		    },3000);
+		</script>
 		<div class="body_box2">
 			<div class="body_box2_1">
 				<div class="body_box2_2">
@@ -184,69 +198,84 @@
 					<ul class="box_right_ul">
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">1</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">胶粒手套</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">19007</span></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">胶粒手套</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">19007</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products3.png"/>
+									<p class="box_right_p1_1"><a href="#">胶粒手套(润滑脂促销活动专用)</a></p>
+								</div>
 							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products3.png"/>
-								<p class="box_right_p1_1"><a href="#">胶粒手套(润滑脂促销活动专用)</a></p>
-							</div>
+							
 						</li>
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">2</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">苹果（APPLE）iPad Air</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">6888</span></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">苹果（APPLE）iPad Air</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">6888</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products2.png"/>
+									<p class="box_right_p1_1"><a href="#">苹果（APPLE）iPad Air</a></p>
+								</div>
 							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products2.png"/>
-								<p class="box_right_p1_1"><a href="#">苹果（APPLE）iPad Air</a></p>
-							</div>
+							
 						</li>
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">3</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">100</span></p>
-							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products7.png"/>
-								<p class="box_right_p1_1"><a href="#">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</a></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">100</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products7.png"/>
+									<p class="box_right_p1_1"><a href="#">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</a></p>
+								</div>
 							</div>
 						</li>
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">4</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水r</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">399</span></p>
-							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products5.png"/>
-								<p class="box_right_p1_1"><a href="#">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</a></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水r</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">399</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products5.png"/>
+									<p class="box_right_p1_1"><a href="#">固特异洗车水枪固特异洗车水固特异洗车水枪固特异洗车水</a></p>
+								</div>
 							</div>
 						</li>
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">5</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">糖猫-搜狗儿童对讲定位手</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">480</span></p>
-							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products4.png"/>
-								<p class="box_right_p1_1"><a href="#">糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手</a></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">糖猫-搜狗儿童对讲定位手</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">480</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products4.png"/>
+									<p class="box_right_p1_1"><a href="#">糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手</a></p>
+								</div>
 							</div>
 						</li>
 						<li class="box_right_ul_li1">
 							<span class="box_right_span1">6</span>
-							<div class="box_li_1">
-								<p class="box_right_p1">糖猫-搜狗儿童对讲定位手</p>
-								<p class="box_right_p2">销量：<span class="box_right_span2">480</span></p>
+							<div>
+								<div class="box_li_1">
+									<p class="box_right_p1">糖猫-搜狗儿童对讲定位手</p>
+									<p class="box_right_p2">销量：<span class="box_right_span2">480</span></p>
+								</div>
+								<div class="box_li_2 ying1">
+									<img class="box_right_img1" src="img/products4.png"/>
+									<p class="box_right_p1_1"><a href="#">糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手</a></p>
+								</div>
 							</div>
-							<div class="box_li_2 ying1">
-								<img class="box_right_img1" src="img/products4.png"/>
-								<p class="box_right_p1_1"><a href="#">糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手糖猫-搜狗儿童对讲定位手</a></p>
-							</div>
+							
 						</li>
 					</ul>
 				</div>
@@ -298,6 +327,7 @@
 			</ul>
 			<p>版权所有:&nbsp;&nbsp;沪ICP备12038387号</p>
 		</div>
+		<div id="gd_f"></div>
 	</body>
 </html>
 <script src="js/jquery-1.3.1.js" type="text/javascript" charset="utf-8"></script>
@@ -316,4 +346,17 @@
 		);
 	});
 
+</script>
+<script type="text/javascript">
+	
+	$(function(){
+		$(".box_li_1").mouseover(function(){
+			$(this).siblings().css("display","block").siblings().css("display","none")
+		})
+		$(".box_li_2").mouseout(function(){
+			$(this).siblings().css("display","block").siblings().css("display","none")
+		
+		})
+		
+	})
 </script>

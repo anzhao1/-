@@ -1,0 +1,71 @@
+.my_nr{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+.ul_1{
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+.ul_1 li{
+	float: left;
+	font-size: 16px;
+	color: #666666;
+	margin-right: 7px;
+}
+.ul_1 li:nth-child(2) a:hover{
+	color: blue;
+}
+.picture{
+	width: 100%;
+	height: 300px;
+	margin-top: 15px;
+}
+.xxk{
+	width: 100%;
+	margin-top: 10px;
+}
+.xxk2{
+	width: 263px;
+	height: 164px;
+	float: left;
+	display: block;
+}
+.xxk2_ul{
+	width: 100%;
+	list-style: none;
+}
+.xxk2_ul li{
+	background: url(../img/procMecha_lul.jpg)no-repeat;
+	margin-top: 1px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    width: 263px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.xxk2_ul .after{
+	background: url(../img/procMecha_lulclk.jpg) no-repeat;
+}
+.xxk2_ul .after a{
+	color: #FFFFFF;
+}
+.xxk3{
+	width: 910px;
+	float: right;
+}
+.xxk3_1{
+	display: block;
+}
+.xxk3_2{
+	display: none;
+}
+.xxk3_3{
+	display: none;
+}
+.xxk3_4{
+	display: none;
+}
+

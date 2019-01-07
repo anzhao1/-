@@ -191,3 +191,11 @@
 	height: 20px;
 	
 }
+#gd_f{
+	width: 70px;
+	height: 70px;
+	background:url(../img/result-top-btn.png)no-repeat center center;
+	position: fixed;
+	right: 60px;
+	bottom:140px;
+}
